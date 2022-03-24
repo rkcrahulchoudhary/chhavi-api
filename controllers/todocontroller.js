@@ -25,7 +25,7 @@ data.save().then(data =>{
 exports.getData = (req,res) =>{
     todoSchemas.find().then(data =>{
         return res.status(200).json({data : data, message : "Success", status : true})
-    }).catch(err =>{
+    }).catch(err =>{ 
         console.log(err); 
-    })
+    })        
 }
